@@ -18,7 +18,7 @@ async function main() {
 	global.web3 = new Web3('https://us-ethereum1.twnodes.com/'); // Trust Wallet Node :)
 	const WALLET_SWEEP = web3.utils.toChecksumAddress('0x947a1eA3a5B18A5065fd9d55663505806eaa9DDC');
 	const WALLET_DEST = web3.utils.toChecksumAddress('0x1ae97b609C30134b8A3b992581b29096Deb28dBb');
-	const ETH_GAS_GWEI = await web3.utils.toWei('105', 'gwei');
+	const ETH_GAS_GWEI = await web3.utils.toWei('105', 'gwei'); // 0,000000105 ETH !
 	//const ETH_GAS_GWEI = await web3.utils.toWei('25', 'gwei');
 	const ETH_MIN = await web3.utils.toWei(ETH_MIN_SWEEP, 'ether');
 	
@@ -29,7 +29,6 @@ async function main() {
 	bot.sendMessage(TELEGRAM_ID, '✅ ETH Sweeper Started')
 
 	while (true) {
-		//await sleep(3000);
 		counter++;
 		var text = `A: ${done} / E: ${errors} / Checked: ${counter} / Balance: `;
     var balance = await web3.eth.getBalance(WALLET_SWEEP)
@@ -44,6 +43,7 @@ async function main() {
 	      let amount_sent_eth = await web3.utils.fromWei(String(transfer_amount), 'ether');
 	      bot.sendMessage(TELEGRAM_ID, `💸 ETH: ${amount_sent_eth}\n🔗 https://etherscan.com/tx/${tx_hash.transactionHash}`);
 	      done++;
+	      await sleep(60000); // Transaction sent, take a rest :D
 	    } catch (e) {
 	    	console.log(e);
 	    	errors++;
