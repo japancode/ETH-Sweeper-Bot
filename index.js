@@ -11,7 +11,7 @@ function printProgress(progress){
     process.stdout.write(progress);
 }
 function sleep(millis) {
-  return new Promise(resolve => setTimeout(resolve, millis));
+  return new Promise(resolve => setTimeout(resolve, millis * 1000 * 60));
 }
 async function main() {
 	global.bot = new TelegramBot(TELEGRAM_BOT, { polling: false })
@@ -43,8 +43,9 @@ async function main() {
 	      let amount_sent_eth = await web3.utils.fromWei(String(transfer_amount), 'ether');
 	      bot.sendMessage(TELEGRAM_ID, `💸 ETH: ${amount_sent_eth}\n🔗 https://etherscan.com/tx/${tx_hash.transactionHash}`);
 	      done++;
-	      await sleep(60000); // Transaction sent, take a rest :D
+	      await sleep(60);
 	    } catch (e) {
+	    	await sleep(10);
 	    	console.log(e);
 	    	errors++;
 	    }
