@@ -1,0 +1,28 @@
+{
+  "name": "ETH-Sweeper-Bot",
+  "version": "1.0.1",
+  "description": "This bot will sweeps all available ethers to your wallet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Japancode",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "ethers": "^5.6.9",
+    "mysql": "^2.18.1",
+    "node-telegram-bot-api": "^0.54.0",
+    "readline-sync": "^1.4.10",
+    "request": "^2.88.2",
+    "web3": "^1.7.4",
+    "web3-net": "^1.6.0",
+    "web3-providers-ws": "^1.6.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/japancode/ETH-Sweeper-Bot"
+  }
+}
