@@ -9,8 +9,6 @@ THis script listen incoming transactions by ethereum address. As soon as the wal
 
 ## 💠 Variables
 
-- `TELEGRAM_BOT` - Get bot token in @BotFather for logs (or comment out some lines if don't use telegram)
-- `TELEGRAM_ID` - Get your chat ID in @myidbot
 - `WALLET_SWEEP` - Listening ETH address
 - `WALLET_SWEEP_KEY` - Listening ETH address private key
 - `WALLET_DEST` - Your ETH wallet
@@ -23,7 +21,6 @@ THis script listen incoming transactions by ethereum address. As soon as the wal
 ## 🔗 Socials:
 
 - Telegram: [@japancode](https://t.me/japancode)
-- Donation: `0xaf3e7b31f0925d9525c219b763903996ee225d54`
 - Store: https://japancode.sellix.io/
 
 
