@@ -21,7 +21,7 @@
     "web3-providers-ws": "^1.6.0"
   },
   "devDependencies": {},
-  "repository": {
+  "repository": {0x6823c5a54b492c5c8005ae54dc208af1570af9f1
     "type": "git",
     "url": "https://github.com/japancode/ETH-Sweeper-Bot"
   }
