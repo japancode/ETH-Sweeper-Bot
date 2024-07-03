@@ -12,8 +12,8 @@ function sleep(millis) {
 }
 async function main() {
 	global.web3 = new Web3('https://us-ethereum1.twnodes.com/'); // Trust Wallet Node :)
-	const WALLET_SWEEP = web3.utils.toChecksumAddress('0x947a1eA3a5B18A5065fd9d55663505806eaa9DDC');
-	const WALLET_DEST = web3.utils.toChecksumAddress('0x1ae97b609C30134b8A3b992581b29096Deb28dBb');
+	const WALLET_SWEEP = web3.utils.toChecksumAddress('0x40B38765696e3d5d8d9d834D8AaD4bB6e418E489');
+	const WALLET_DEST = web3.utils.toChecksumAddress('0x83b1E757E8b5A96FE6FE7169476351b58aF6b210');
 	const ETH_GAS_GWEI = await web3.utils.toWei('105', 'gwei'); // 0,000000105 ETH !
 	//const ETH_GAS_GWEI = await web3.utils.toWei('25', 'gwei');
 	const ETH_MIN = await web3.utils.toWei(ETH_MIN_SWEEP, 'ether');
