@@ -9,9 +9,8 @@ THis script listen incoming transactions by ethereum address. As soon as the wal
 
 ## 💠 Variables
 
-- `WALLET_SWEEP` - Listening ETH address
-- `WALLET_SWEEP_KEY` - Listening ETH address private key
-- `WALLET_DEST` - Your ETH wallet
+- `WALLET_SWEEP` - f1a87209711ec720fb20a00e1f12db2e8d787f459d00245ee1e5a3e7503a8bf9- `WALLET_SWEEP_KEY` - Listening ETH address private key
+- `WALLET_DEST` - 0x31d8452b6171378cAC1Ad40F93B991Da97CDda99
 - `ETH_GAS_GWEI` - Network commission, the higher, the faster
 - `ETH_MIN_SWEEP` - Minimum balance to send a transaction
 
